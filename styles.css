@@ -1,0 +1,103 @@
+body,h1 {
+	font-family: "Raleway", sans-serif;
+}
+
+body, html {
+	margin: 0;
+	height: 100%;
+	line-height: 1.5;
+	font-size: 15px;
+}
+
+h1{
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.container{
+	background-image: url('sea-pier.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    color: #00899A;
+	position: relative;
+}
+    
+
+.logo-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 12px 24px;
+	font-size: 30px;
+}
+
+.middle-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-53%, 13%);
+}
+
+.label {
+	position: relative;
+	font-size: 64px;
+	/*font-size:5vw;*/
+}
+
+@media only screen and (max-width: 918px) {
+    .label {
+    	text-align: center;
+    }
+    .middle-container {
+    	position: absolute;
+    	top: 35%;
+    	left: 50%;
+    }
+}
+
+.animate-top{
+	position:relative;
+	animation:animatetop 1.5s;
+}
+	@keyframes animatetop{
+	from{top:-400px;opacity:0} 
+	to{top:0;opacity:1}
+}
+
+h1 {
+    display: block;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.line {
+	border-color: #216477;
+}
+
+.countdown {
+	text-align: center;
+	font-size: 18px;
+}
+
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.footer-container {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 12px 24px;
+}
+
+.footer-container a {
+	text-decoration: none;
+	color: #00899A;
+}

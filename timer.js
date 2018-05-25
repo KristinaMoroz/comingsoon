@@ -1,0 +1,2 @@
+var deadline;
+var currentTime
