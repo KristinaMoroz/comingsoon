@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 body,h1 {
 	font-family: "Raleway", sans-serif;
 }
@@ -14,8 +18,13 @@ h1{
     margin: 10px 0;
 }
 
+a {
+	text-decoration: none;
+	color: #00899A;
+}
+
 .container{
-	background-image: url('sea-pier.jpg');
+	background-image: url('../img/sea-pier.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
@@ -34,7 +43,7 @@ h1{
 
 .middle-container {
 	position: absolute;
-	top: 50%;
+	top: 5%;
 	left: 50%;
 	transform: translate(-53%, 13%);
 }
@@ -45,16 +54,6 @@ h1{
 	/*font-size:5vw;*/
 }
 
-@media only screen and (max-width: 918px) {
-    .label {
-    	text-align: center;
-    }
-    .middle-container {
-    	position: absolute;
-    	top: 35%;
-    	left: 50%;
-    }
-}
 
 .animate-top{
 	position:relative;
@@ -73,13 +72,35 @@ h1 {
     -webkit-margin-end: 0px;
 }
 
-.line {
-	border-color: #216477;
+.countdown-container {
+	width: 100%;
+	position: fixed;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, 13%);
+	text-align: center;
+}
+div .circle {
+	height: 100px;
+	width: 100px;
+	background-color: rgba(0, 137, 154, 0.5);
+	border: #00899A solid 1px;
+	border-radius: 50%;
+	display: inline-block;
+	color: #ffffff;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin: 5px;
 }
 
-.countdown {
+div .circle div {
+	position: relative;
+	top: 15%;
+	font-size: 1.0rem;
 	text-align: center;
-	font-size: 18px;
+}
+div .circle div .num {
+	font-size: 1.8rem;
 }
 
 p {
@@ -100,4 +121,29 @@ p {
 .footer-container a {
 	text-decoration: none;
 	color: #00899A;
+}
+
+
+@media only screen and (max-width: 918px) {
+    .label {
+    	text-align: center;
+    }
+    .middle-container {
+    	position: absolute;
+    	top: 15%;
+    	left: 50%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	div .circle {
+		height: 70px;
+		width: 70px;
+	}	
+	div .circle div {
+		font-size: 0.5rem;
+	}
+	div .circle div .num {
+		font-size: 1.3rem;
+	}
 }
