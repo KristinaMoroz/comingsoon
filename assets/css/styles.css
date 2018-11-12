@@ -32,13 +32,35 @@ a {
 	position: relative;
 }
     
+.navbar {
+	margin: 0;
+	padding: 0;
+}
 
 .logo-container {
-	position: absolute;
+	float: left;
+	/* position: absolute;
 	top: 0;
-	left: 0;
+	left: 0; */
 	padding: 12px 24px;
 	font-size: 30px;
+}
+
+.navbar ul {
+	color: #ffffff;
+	margin: 0 15px;
+}
+
+.navbar li {
+	list-style: none;
+	float: right;
+	margin: 15px 5px;
+	padding: 3px 13px;
+	border-left: #ffffff 0.5px solid;
+	border-bottom: #ffffff 0.5px solid;
+	border-radius: 1.2rem;
+	background-color: rgba(255, 255, 255, 0.4);
+	font-size: 1.0rem;
 }
 
 .middle-container {
@@ -137,8 +159,8 @@ p {
 
 @media only screen and (max-width: 500px) {
 	div .circle {
-		height: 70px;
-		width: 70px;
+		height: 65px;
+		width: 65px;
 	}	
 	div .circle div {
 		font-size: 0.5rem;
